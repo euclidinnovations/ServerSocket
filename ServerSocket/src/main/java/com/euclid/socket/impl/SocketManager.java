@@ -16,6 +16,10 @@ public class SocketManager {
 		return m_socket_manager;
 	}
 	
-	public 
+	public void addClient(Client client){
+		if(m_clients.get(client.getName())!=null)
+			return;
+		m_clients.put(client.getName(), client);
+	}
 	
 }
